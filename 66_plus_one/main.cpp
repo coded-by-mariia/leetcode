@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 std::vector<int> plus_one(std::vector<int> &number) {
     auto it = number.end() - 1;
