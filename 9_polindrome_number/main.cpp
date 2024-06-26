@@ -1,5 +1,5 @@
 /***************************************************************
- * Task 9 "Polindrome Number"
+ * Problem 9: Polindrome Number: Easy
  * 
  * Given an integer x, return true if x is a palindrome, 
  * and false otherwise.
