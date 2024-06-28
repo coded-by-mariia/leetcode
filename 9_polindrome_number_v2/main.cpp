@@ -11,12 +11,15 @@
 #include <deque>
 #include <string>
 
+bool is_polindrome(const int&);
+
 bool is_polindrome(const int &number) {
     std::deque<int> d;
     std::string str = std::to_string(number);
-    for (auto &dig : str) {
+    for (const auto &dig : str) {
         d.push_back(dig);
     }
+    
     while (d.size() > 1) {
         if (d.front() != d.back()) { 
             return false;
