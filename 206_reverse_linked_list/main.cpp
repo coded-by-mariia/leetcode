@@ -19,6 +19,7 @@ std::ostream &operator<<(std::ostream &os, const ListNode* head) {
     os << "\t[";
     const ListNode* current = head;
     while (current != nullptr) {
+    // while (current) {} -- equivalent
         os << current->val;
         if (current->next != nullptr) {
             os << " -> ";
@@ -35,8 +36,8 @@ ListNode* reverse_listnode(ListNode* head) {
     ListNode* next = nullptr;
 
     while (curr != nullptr) {
-        next = curr -> next;
-        curr -> next = prev;
+        next = curr->next;
+        curr->next = prev;
         prev = curr;
         curr = next;
     }
