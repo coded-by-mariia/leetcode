@@ -35,10 +35,12 @@ int main() {
     std::vector<int> test_vec_2 {3,1,3};
     std::vector<int> test_vec_3 {0,1,3,3,2,0,4,3};
     std::vector<int> test_vec_4 {0};
+    std::vector<int> test_vec_5 {3};
     test_vec_vec.emplace_back(test_vec_1);
     test_vec_vec.emplace_back(test_vec_2);
     test_vec_vec.emplace_back(test_vec_3);
     test_vec_vec.emplace_back(test_vec_4);
+    test_vec_vec.emplace_back(test_vec_5);
 
     int target {3};
 
