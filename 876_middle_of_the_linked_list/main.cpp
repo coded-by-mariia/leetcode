@@ -28,7 +28,7 @@ std::ostream &operator<<(std::ostream &os, const ListNode* head) {
         }
         temp = temp->next;
     }
-    os << "]" << std::endl;
+    os << " ]" << std::endl;
     return os;
 }
 
@@ -60,7 +60,7 @@ int main() {
               << middle_node_1->val << std::endl;
 
 
-    // Test case of even number of nodes
+    // Test case for even number of nodes
     ListNode* ll_2 = new ListNode(1);
     ll_2 -> next = new ListNode(2);
     ll_2 -> next -> next = new ListNode(3);

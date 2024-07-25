@@ -31,6 +31,11 @@ std::ostream &operator<<(std::ostream &os, const ListNode* head) {
 }
 
 bool has_cycle(ListNode* head) {
+    // checking the edge case to avoid unnessesary computations
+    // in the situation with empty LL or LL with one node
+    // as it's impossible to have a cycle in this kind of LL
+    if (!head || !head->next) return false;
+    
     ListNode* fast = head;
     ListNode* slow = head;
 
