@@ -18,8 +18,7 @@ struct ListNode {
 std::ostream &operator<<(std::ostream &os, const ListNode* head) {
     os << "\t[";
     const ListNode* current = head;
-    while (current != nullptr) {
-    // while (current) {} -- equivalent
+    while (current) {
         os << current->val;
         if (current->next != nullptr) {
             os << " -> ";
