@@ -38,10 +38,10 @@ std::ostream& operator<<(std::ostream& os, const ListNode* head) {
 
 // function partitioning a linked list
 ListNode* partition_list(ListNode* head, int target) {
-    ListNode* current = head; // helper for iteration through the linked list
+    ListNode* current = head; // a helper for iteration through the linked list
 
-    ListNode* before_head = new ListNode(0); // begginig of the list with nodes less than target
-    ListNode* after_head = new ListNode(0); // beginig of the list with nodes greater than target
+    ListNode* before_head = new ListNode(0); // beginning of the list with nodes less than target
+    ListNode* after_head = new ListNode(0); // beginning of the list with nodes greater than target
 
     ListNode* before = before_head; 
     ListNode* after = after_head; 
